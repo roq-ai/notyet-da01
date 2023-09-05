@@ -1,0 +1,2422 @@
+[
+  {
+    "role": [
+      {
+        "id": "35cba87d-7048-443d-8599-27f7d5be7a0a",
+        "role_name": "Admin",
+        "created_at": "2023-09-04T10:22:00.747Z",
+        "updated_at": "2023-09-05T02:48:05.752Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9fff3c62-f430-4fd3-9d80-4ee111c3d9d4",
+        "role_name": "Manager",
+        "created_at": "2023-09-04T12:06:45.077Z",
+        "updated_at": "2023-09-04T13:33:27.236Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f4a66005-1d6e-4144-8632-7cb71845f80b",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-04T16:28:37.317Z",
+        "updated_at": "2023-09-04T14:48:05.220Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a0e7ad47-5b95-43b1-b464-d0f8ace0bc56",
+        "role_name": "Employee",
+        "created_at": "2023-09-04T19:47:03.468Z",
+        "updated_at": "2023-09-04T09:49:49.685Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "83790b1e-4e64-484d-88f0-1751206f3fe0",
+        "role_name": "Guest",
+        "created_at": "2023-09-04T18:41:59.437Z",
+        "updated_at": "2023-09-05T06:48:41.011Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "56a6baca-2e2f-4213-8790-24ac01fce5cf",
+        "permission_name": "Read",
+        "created_at": "2023-09-05T04:28:46.559Z",
+        "updated_at": "2023-09-04T21:45:26.493Z",
+        "role_id": "83790b1e-4e64-484d-88f0-1751206f3fe0"
+      },
+      {
+        "id": "b17f711d-9123-43e6-987b-bc8954f5eb3f",
+        "permission_name": "Write",
+        "created_at": "2023-09-04T16:24:11.495Z",
+        "updated_at": "2023-09-04T19:33:54.412Z",
+        "role_id": "83790b1e-4e64-484d-88f0-1751206f3fe0"
+      },
+      {
+        "id": "67af62d2-f8d6-4110-9cdb-0d14a58b170a",
+        "permission_name": "Delete",
+        "created_at": "2023-09-04T11:01:55.730Z",
+        "updated_at": "2023-09-04T15:03:15.038Z",
+        "role_id": "9fff3c62-f430-4fd3-9d80-4ee111c3d9d4"
+      },
+      {
+        "id": "0ab2b6f4-f148-4697-9f0a-9e8f708060e5",
+        "permission_name": "Execute",
+        "created_at": "2023-09-04T12:21:44.666Z",
+        "updated_at": "2023-09-04T21:07:25.190Z",
+        "role_id": "83790b1e-4e64-484d-88f0-1751206f3fe0"
+      },
+      {
+        "id": "12d863a0-31bf-40e5-a300-689ea755d96a",
+        "permission_name": "Manage",
+        "created_at": "2023-09-04T18:05:46.136Z",
+        "updated_at": "2023-09-05T02:02:57.292Z",
+        "role_id": "a0e7ad47-5b95-43b1-b464-d0f8ace0bc56"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "d31db94f-f6ff-48f1-91ff-267d09d530f8",
+        "amount": 97807,
+        "status": "Paid",
+        "vendor": "ACME Inc.",
+        "invoice_date": "2023-09-05T00:01:54.435Z",
+        "due_date": "2023-09-04T21:44:16.687Z",
+        "created_at": "2023-09-04T20:35:25.832Z",
+        "updated_at": "2023-09-04T14:17:37.042Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5c2c55d8-8d7d-4979-960f-989e75a86578",
+        "amount": 26359,
+        "status": "Pending",
+        "vendor": "Widgets Ltd.",
+        "invoice_date": "2023-09-04T23:23:18.742Z",
+        "due_date": "2023-09-04T09:34:20.976Z",
+        "created_at": "2023-09-04T16:45:28.075Z",
+        "updated_at": "2023-09-04T22:48:50.983Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c191b555-bb6b-42ad-8282-a2f4fb8ed285",
+        "amount": 1391,
+        "status": "Overdue",
+        "vendor": "Gadget Co.",
+        "invoice_date": "2023-09-05T05:25:46.620Z",
+        "due_date": "2023-09-04T22:39:53.290Z",
+        "created_at": "2023-09-04T11:09:00.330Z",
+        "updated_at": "2023-09-04T14:03:18.341Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "cfbbe800-716c-4ab8-bda9-0bd265f9c593",
+        "amount": 81458,
+        "status": "Cancelled",
+        "vendor": "Tech Solutions",
+        "invoice_date": "2023-09-04T10:50:22.701Z",
+        "due_date": "2023-09-04T08:49:03.979Z",
+        "created_at": "2023-09-04T11:13:56.029Z",
+        "updated_at": "2023-09-05T03:35:17.903Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "06074097-08d5-4c45-93b8-b2af6ec58dcc",
+        "amount": 7094,
+        "status": "Refunded",
+        "vendor": "Superstore",
+        "invoice_date": "2023-09-05T03:19:39.586Z",
+        "due_date": "2023-09-05T06:11:14.591Z",
+        "created_at": "2023-09-04T16:03:06.172Z",
+        "updated_at": "2023-09-04T20:43:04.170Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "07b0d508-95b2-4b4d-a284-55ec5ac37a55",
+        "debit": 19244,
+        "credit": 35235,
+        "transaction_date": "2023-09-04T17:40:57.496Z",
+        "description": "Financial analysis",
+        "created_at": "2023-09-04T17:05:19.612Z",
+        "updated_at": "2023-09-04T18:22:41.739Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8ce08e47-29b2-4ed4-bb69-0c94561db8e8",
+        "debit": 73773,
+        "credit": 69108,
+        "transaction_date": "2023-09-04T09:53:47.467Z",
+        "description": "Budget planning",
+        "created_at": "2023-09-04T23:56:52.528Z",
+        "updated_at": "2023-09-05T02:50:02.174Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "dc2c4d78-be5a-4563-a8e4-21ea0c9e87d2",
+        "debit": 89544,
+        "credit": 57133,
+        "transaction_date": "2023-09-04T17:21:18.598Z",
+        "description": "Tax preparation",
+        "created_at": "2023-09-05T02:11:22.112Z",
+        "updated_at": "2023-09-04T19:58:51.027Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b284623f-719e-4083-8cd1-148e5e52e865",
+        "debit": 66568,
+        "credit": 27930,
+        "transaction_date": "2023-09-04T13:35:42.960Z",
+        "description": "Auditing services",
+        "created_at": "2023-09-04T11:38:32.562Z",
+        "updated_at": "2023-09-04T17:40:00.841Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b76046b0-3730-4494-b86d-615001aaf532",
+        "debit": 90097,
+        "credit": 32093,
+        "transaction_date": "2023-09-05T04:08:36.637Z",
+        "description": "Bookkeeping",
+        "created_at": "2023-09-05T07:20:07.740Z",
+        "updated_at": "2023-09-04T14:14:45.269Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "5ae2bcbd-a290-4571-980d-fab3fa802850",
+        "email": "Shanon_Prohaska88@yahoo.com",
+        "firstName": "General",
+        "lastName": "Fay",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21183307",
+        "tenantId": null
+      },
+      {
+        "reference": "d912e8dc-070c-4fcd-8a0c-a841cb563eae",
+        "email": "Kathleen98@hotmail.com",
+        "firstName": "Angeline",
+        "lastName": "Romaguera",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/277.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "509c2c88-8304-4db3-b842-5b014fcba031",
+        "email": "Melvina79@yahoo.com",
+        "firstName": "Porter",
+        "lastName": "Koss",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/455.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "88d3bbaa-a7e0-4aaa-8613-747265f4364a",
+        "email": "Eino_Pfeffer98@hotmail.com",
+        "firstName": "Sigmund",
+        "lastName": "Dickens",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/942.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a498c797-b450-4b2c-b924-457b8b9bf358",
+        "email": "Nona51@hotmail.com",
+        "firstName": "Hailie",
+        "lastName": "Thompson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/113.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "d670d499-24b5-4bab-8337-7a00e44bb5a4",
+        "role_name": "Admin",
+        "created_at": "2023-09-04T12:39:02.917Z",
+        "updated_at": "2023-09-04T11:21:11.994Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "11a08051-a3cb-47ee-8f51-fde2fb79a655",
+        "role_name": "Manager",
+        "created_at": "2023-09-04T17:17:44.504Z",
+        "updated_at": "2023-09-04T21:59:58.026Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "597a6455-2000-4721-8ccf-2c9ab4d2c587",
+        "role_name": "Employee",
+        "created_at": "2023-09-04T16:36:08.784Z",
+        "updated_at": "2023-09-05T04:20:53.511Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f3806287-1357-4abd-9234-afb63688e3fb",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-04T18:15:52.592Z",
+        "updated_at": "2023-09-04T19:51:34.780Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "732e3a1f-0142-4546-a3dd-25264db04627",
+        "role_name": "Team Lead",
+        "created_at": "2023-09-04T18:05:21.043Z",
+        "updated_at": "2023-09-04T18:44:55.044Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "23cb3a15-5669-40fe-9a08-e66d054e145b",
+        "permission_name": "Read",
+        "created_at": "2023-09-04T18:37:25.691Z",
+        "updated_at": "2023-09-04T16:22:30.430Z",
+        "role_id": "732e3a1f-0142-4546-a3dd-25264db04627"
+      },
+      {
+        "id": "1b4b4ec9-8d80-4c35-bb1a-dfac3338c8e3",
+        "permission_name": "Write",
+        "created_at": "2023-09-04T17:54:15.741Z",
+        "updated_at": "2023-09-05T05:05:03.284Z",
+        "role_id": "11a08051-a3cb-47ee-8f51-fde2fb79a655"
+      },
+      {
+        "id": "15f34207-fe8f-4878-b0ba-29c8b4cb9bf2",
+        "permission_name": "Delete",
+        "created_at": "2023-09-04T16:03:12.890Z",
+        "updated_at": "2023-09-05T00:00:00.478Z",
+        "role_id": "11a08051-a3cb-47ee-8f51-fde2fb79a655"
+      },
+      {
+        "id": "98018d36-b994-4ffa-a9ae-582929d9c586",
+        "permission_name": "Execute",
+        "created_at": "2023-09-04T14:34:39.548Z",
+        "updated_at": "2023-09-04T10:01:34.350Z",
+        "role_id": "d670d499-24b5-4bab-8337-7a00e44bb5a4"
+      },
+      {
+        "id": "f1f4aec7-169c-47c2-9fa8-64dea0b8c679",
+        "permission_name": "Manage",
+        "created_at": "2023-09-04T23:06:35.530Z",
+        "updated_at": "2023-09-04T23:48:12.102Z",
+        "role_id": "11a08051-a3cb-47ee-8f51-fde2fb79a655"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "a9f7fb2c-9bda-4602-ad22-8cb0a2602555",
+        "amount": 54482,
+        "status": "Paid",
+        "vendor": "Apple Inc",
+        "invoice_date": "2023-09-04T21:53:30.426Z",
+        "due_date": "2023-09-05T01:32:02.704Z",
+        "created_at": "2023-09-04T09:52:28.254Z",
+        "updated_at": "2023-09-04T22:51:54.595Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6c16799f-e2b8-4fff-b358-c9714989389d",
+        "amount": 35457,
+        "status": "Pending",
+        "vendor": "Microsoft Corporation",
+        "invoice_date": "2023-09-04T17:36:02.085Z",
+        "due_date": "2023-09-04T13:11:41.446Z",
+        "created_at": "2023-09-04T19:06:34.200Z",
+        "updated_at": "2023-09-04T19:32:21.773Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f2a90f7a-0975-4b6b-b182-ee937264e785",
+        "amount": 55206,
+        "status": "Overdue",
+        "vendor": "Amazon.com Inc",
+        "invoice_date": "2023-09-05T03:32:35.402Z",
+        "due_date": "2023-09-04T09:32:16.294Z",
+        "created_at": "2023-09-04T14:03:08.357Z",
+        "updated_at": "2023-09-04T19:03:05.511Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a245ed58-89f7-49ee-9de0-4011b007b4ae",
+        "amount": 56733,
+        "status": "Cancelled",
+        "vendor": "Google LLC",
+        "invoice_date": "2023-09-05T06:49:01.998Z",
+        "due_date": "2023-09-04T17:25:37.177Z",
+        "created_at": "2023-09-05T08:19:27.346Z",
+        "updated_at": "2023-09-05T07:04:30.350Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a91a24d6-e159-4f73-9f42-d467a5a1c6b8",
+        "amount": 14015,
+        "status": "Refunded",
+        "vendor": "Facebook Inc",
+        "invoice_date": "2023-09-04T10:10:12.781Z",
+        "due_date": "2023-09-04T16:36:33.456Z",
+        "created_at": "2023-09-04T19:35:56.095Z",
+        "updated_at": "2023-09-04T16:16:19.732Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "35b120c1-6e37-44d3-a5b7-f1a067e71197",
+        "debit": 93288,
+        "credit": 88823,
+        "transaction_date": "2023-09-04T18:51:14.025Z",
+        "description": "Monthly financial report",
+        "created_at": "2023-09-05T05:54:46.842Z",
+        "updated_at": "2023-09-04T21:37:32.186Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "644146d8-a8db-4b23-ae1f-219cb242afb5",
+        "debit": 47828,
+        "credit": 61334,
+        "transaction_date": "2023-09-04T17:07:30.644Z",
+        "description": "Expense analysis",
+        "created_at": "2023-09-04T23:36:54.431Z",
+        "updated_at": "2023-09-04T21:29:07.829Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "eea1f485-3e4d-4719-859b-c7e151e76ed4",
+        "debit": 35127,
+        "credit": 90405,
+        "transaction_date": "2023-09-04T08:50:20.556Z",
+        "description": "Budget planning",
+        "created_at": "2023-09-04T10:42:02.548Z",
+        "updated_at": "2023-09-05T00:32:46.932Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8beb1a36-9fbd-45e1-9fc9-228c6aa988af",
+        "debit": 15130,
+        "credit": 28386,
+        "transaction_date": "2023-09-05T03:09:38.355Z",
+        "description": "Tax preparation",
+        "created_at": "2023-09-04T18:21:59.187Z",
+        "updated_at": "2023-09-04T10:31:59.833Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "af226272-5c4e-40d8-a462-caf7e694b1fb",
+        "debit": 97269,
+        "credit": 79801,
+        "transaction_date": "2023-09-04T22:22:19.404Z",
+        "description": "Audit documentation",
+        "created_at": "2023-09-04T15:19:30.620Z",
+        "updated_at": "2023-09-05T06:00:34.134Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "a93e2088-c211-4716-8564-65a43729298b",
+        "email": "Thea.Durgan59@gmail.com",
+        "firstName": "Lilyan",
+        "lastName": "Hettinger",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/550.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "bbd3ed56-0145-4bf4-b236-5656e42dce7d",
+        "email": "Arne_Brown@hotmail.com",
+        "firstName": "Terry",
+        "lastName": "Gulgowski",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1157.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "28874be3-9829-404f-950e-e386eb090969",
+        "email": "Mariano.Champlin-Leannon32@hotmail.com",
+        "firstName": "Dominic",
+        "lastName": "Marquardt-Cummerata",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/408.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "0767f448-8e68-4fc5-82de-c08a3d2b91c0",
+        "email": "Dorothea_Reichert78@hotmail.com",
+        "firstName": "Teagan",
+        "lastName": "Murray",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/20323633",
+        "tenantId": null
+      },
+      {
+        "reference": "e2d8fa04-1547-4851-9911-645e714cf519",
+        "email": "Haley45@yahoo.com",
+        "firstName": "Oda",
+        "lastName": "Feeney",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/190.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "2fb044b4-5ff9-48c6-86c3-d98cd8e2eb43",
+        "role_name": "Admin",
+        "created_at": "2023-09-05T06:45:16.531Z",
+        "updated_at": "2023-09-04T10:24:29.384Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "85ca34b9-3017-4cdc-9463-85a49ecd4042",
+        "role_name": "Manager",
+        "created_at": "2023-09-04T10:42:34.609Z",
+        "updated_at": "2023-09-05T00:29:33.862Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d88d6f37-0be9-4412-a812-40692d6418ec",
+        "role_name": "Employee",
+        "created_at": "2023-09-05T08:11:19.970Z",
+        "updated_at": "2023-09-04T16:15:24.885Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1902e9a0-5511-433c-908c-587f34fd15a3",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-05T03:02:06.548Z",
+        "updated_at": "2023-09-04T19:54:04.685Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d71f14e5-4be1-447d-b5b3-eec8d606a6da",
+        "role_name": "Assistant",
+        "created_at": "2023-09-04T10:45:26.130Z",
+        "updated_at": "2023-09-04T19:11:41.857Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "5f95ae5e-62e3-4f49-b13d-8440fb5ffbfd",
+        "permission_name": "Read",
+        "created_at": "2023-09-04T17:48:49.546Z",
+        "updated_at": "2023-09-04T16:13:49.126Z",
+        "role_id": "2fb044b4-5ff9-48c6-86c3-d98cd8e2eb43"
+      },
+      {
+        "id": "75f507c8-15a4-4f8e-8b87-9848b8197504",
+        "permission_name": "Write",
+        "created_at": "2023-09-05T07:28:48.044Z",
+        "updated_at": "2023-09-04T16:49:02.912Z",
+        "role_id": "2fb044b4-5ff9-48c6-86c3-d98cd8e2eb43"
+      },
+      {
+        "id": "8c4bf32e-21e1-481b-8939-c90e69a2325f",
+        "permission_name": "Delete",
+        "created_at": "2023-09-05T05:45:59.295Z",
+        "updated_at": "2023-09-05T07:13:40.398Z",
+        "role_id": "1902e9a0-5511-433c-908c-587f34fd15a3"
+      },
+      {
+        "id": "f2dc1584-8106-4014-ac2e-3a8d31c0b60d",
+        "permission_name": "Execute",
+        "created_at": "2023-09-04T12:37:02.951Z",
+        "updated_at": "2023-09-04T22:19:26.676Z",
+        "role_id": "d88d6f37-0be9-4412-a812-40692d6418ec"
+      },
+      {
+        "id": "e5464bda-aeff-4e3b-b495-b15a844eee93",
+        "permission_name": "Manage",
+        "created_at": "2023-09-05T00:02:05.668Z",
+        "updated_at": "2023-09-04T21:47:04.934Z",
+        "role_id": "2fb044b4-5ff9-48c6-86c3-d98cd8e2eb43"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "79829289-b9a5-4112-90c3-a200835f3d9a",
+        "amount": 81341,
+        "status": "Paid",
+        "vendor": "ABC Suppliers",
+        "invoice_date": "2023-09-04T22:33:36.455Z",
+        "due_date": "2023-09-05T06:44:48.277Z",
+        "created_at": "2023-09-04T14:21:08.452Z",
+        "updated_at": "2023-09-04T09:25:14.468Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c7070a7b-6c8f-4a71-bcab-fccf20a1187a",
+        "amount": 82939,
+        "status": "Pending",
+        "vendor": "XYZ Distributors",
+        "invoice_date": "2023-09-05T02:01:06.621Z",
+        "due_date": "2023-09-04T14:53:48.462Z",
+        "created_at": "2023-09-04T14:42:00.326Z",
+        "updated_at": "2023-09-04T09:26:56.325Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "bdd83d54-1482-49e6-a695-aae261a68afb",
+        "amount": 50502,
+        "status": "Overdue",
+        "vendor": "123 Retailers",
+        "invoice_date": "2023-09-05T04:19:59.223Z",
+        "due_date": "2023-09-05T05:59:25.425Z",
+        "created_at": "2023-09-05T03:44:36.094Z",
+        "updated_at": "2023-09-05T04:29:56.669Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7e86b3b2-0771-4651-862f-85f23839ba47",
+        "amount": 53592,
+        "status": "Cancelled",
+        "vendor": "Acme Wholesalers",
+        "invoice_date": "2023-09-05T01:07:57.219Z",
+        "due_date": "2023-09-04T18:01:39.425Z",
+        "created_at": "2023-09-05T01:51:11.235Z",
+        "updated_at": "2023-09-05T02:13:14.979Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "73b1467f-9519-400a-8304-aaa7119b76a1",
+        "amount": 38444,
+        "status": "Processing",
+        "vendor": "Smith & Sons",
+        "invoice_date": "2023-09-04T11:20:16.225Z",
+        "due_date": "2023-09-04T12:54:35.517Z",
+        "created_at": "2023-09-04T08:59:44.249Z",
+        "updated_at": "2023-09-04T09:30:28.985Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "042550e5-5e74-4127-8ca0-a6afbcf117af",
+        "debit": 21592,
+        "credit": 84477,
+        "transaction_date": "2023-09-04T21:20:09.963Z",
+        "description": "Financial analysis and reporting",
+        "created_at": "2023-09-04T14:09:08.312Z",
+        "updated_at": "2023-09-04T14:59:16.589Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ff7ec313-dd88-48e0-be6f-3a4cdceaf0f7",
+        "debit": 98736,
+        "credit": 81811,
+        "transaction_date": "2023-09-04T13:33:17.500Z",
+        "description": "Budgeting and forecasting",
+        "created_at": "2023-09-04T12:28:10.382Z",
+        "updated_at": "2023-09-05T06:47:36.489Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "95420378-401f-4846-8240-41836897d2ac",
+        "debit": 22196,
+        "credit": 79349,
+        "transaction_date": "2023-09-04T19:42:19.787Z",
+        "description": "Tax planning and compliance",
+        "created_at": "2023-09-04T14:04:30.143Z",
+        "updated_at": "2023-09-04T11:28:46.887Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9f0e0b72-b273-4a4f-bff8-bbf19fd039b7",
+        "debit": 79663,
+        "credit": 21776,
+        "transaction_date": "2023-09-05T00:14:01.216Z",
+        "description": "Payroll processing",
+        "created_at": "2023-09-05T00:16:25.256Z",
+        "updated_at": "2023-09-04T12:25:41.925Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "418df2a7-e12f-4cd1-99a5-ebf221b4ec12",
+        "debit": 24233,
+        "credit": 69176,
+        "transaction_date": "2023-09-04T23:06:29.707Z",
+        "description": "Auditing and assurance",
+        "created_at": "2023-09-04T17:24:08.849Z",
+        "updated_at": "2023-09-05T02:07:11.145Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "4af12a52-483d-4107-95e6-34bc88d5bcb7",
+        "email": "Clement56@hotmail.com",
+        "firstName": "Reta",
+        "lastName": "Monahan",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/64994804",
+        "tenantId": null
+      },
+      {
+        "reference": "7699dc85-45e8-4388-a523-97f27d7bbfb3",
+        "email": "Reyna_Turcotte@yahoo.com",
+        "firstName": "Gabriel",
+        "lastName": "Medhurst-Auer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/491.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "d69446b9-8983-4904-9755-8fb08011d632",
+        "email": "Erna_Fisher15@yahoo.com",
+        "firstName": "Kristin",
+        "lastName": "Rosenbaum",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/34500465",
+        "tenantId": null
+      },
+      {
+        "reference": "389f7a71-2a35-439c-a7c4-c46738fae020",
+        "email": "Berta11@hotmail.com",
+        "firstName": "Sandy",
+        "lastName": "Wunsch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/774.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f252c66e-bf94-4951-8510-1fd346015530",
+        "email": "Brycen.Greenholt28@gmail.com",
+        "firstName": "Henri",
+        "lastName": "Labadie",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/830.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "071e3753-4c05-4ec2-93d0-c589c4a67d41",
+        "role_name": "Admin",
+        "created_at": "2023-09-04T17:06:17.155Z",
+        "updated_at": "2023-09-04T17:00:27.914Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d6c39126-b55c-4341-bf3a-9b9531efa00d",
+        "role_name": "Manager",
+        "created_at": "2023-09-05T04:48:57.394Z",
+        "updated_at": "2023-09-05T03:33:33.655Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "39895b1f-8fd5-46d9-a8c9-1ad8afade5b7",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-05T03:55:37.109Z",
+        "updated_at": "2023-09-05T04:54:39.271Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "532fb898-ec06-46ea-86d9-21513a8ce72b",
+        "role_name": "Employee",
+        "created_at": "2023-09-04T14:47:31.729Z",
+        "updated_at": "2023-09-04T13:59:04.927Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "cdbb9a11-5bbe-48e9-bbe8-efdf5f082ee7",
+        "role_name": "Intern",
+        "created_at": "2023-09-04T12:49:04.010Z",
+        "updated_at": "2023-09-05T04:13:56.337Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "c89e3f21-b28d-4ad5-9164-aa01be9c905b",
+        "permission_name": "Read",
+        "created_at": "2023-09-04T23:55:49.007Z",
+        "updated_at": "2023-09-05T03:47:13.552Z",
+        "role_id": "532fb898-ec06-46ea-86d9-21513a8ce72b"
+      },
+      {
+        "id": "15dae727-486e-4ee0-a61e-64a2f8f6a584",
+        "permission_name": "Write",
+        "created_at": "2023-09-05T03:21:30.993Z",
+        "updated_at": "2023-09-04T23:01:49.235Z",
+        "role_id": "532fb898-ec06-46ea-86d9-21513a8ce72b"
+      },
+      {
+        "id": "62e8b00a-9e44-43c9-a637-f471a67c6bf9",
+        "permission_name": "Delete",
+        "created_at": "2023-09-04T11:29:18.959Z",
+        "updated_at": "2023-09-04T23:39:35.032Z",
+        "role_id": "071e3753-4c05-4ec2-93d0-c589c4a67d41"
+      },
+      {
+        "id": "e42b2f3a-a689-4628-b5c6-a90591fd7eed",
+        "permission_name": "Execute",
+        "created_at": "2023-09-04T13:31:16.049Z",
+        "updated_at": "2023-09-04T23:04:38.985Z",
+        "role_id": "39895b1f-8fd5-46d9-a8c9-1ad8afade5b7"
+      },
+      {
+        "id": "5184e17d-5e91-4d6c-87ce-0cb9dcc3d7b9",
+        "permission_name": "Admin",
+        "created_at": "2023-09-05T00:06:38.464Z",
+        "updated_at": "2023-09-05T03:49:58.210Z",
+        "role_id": "cdbb9a11-5bbe-48e9-bbe8-efdf5f082ee7"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "38b44db9-3426-4aba-9027-6936c99f07fb",
+        "amount": 45440,
+        "status": "Pending",
+        "vendor": "ABC Supplier",
+        "invoice_date": "2023-09-04T09:47:36.351Z",
+        "due_date": "2023-09-04T11:48:38.186Z",
+        "created_at": "2023-09-05T00:29:52.310Z",
+        "updated_at": "2023-09-04T23:46:53.631Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d8aa220b-7e2b-4852-bda9-702e36fbd270",
+        "amount": 94203,
+        "status": "Paid",
+        "vendor": "XYZ Vendor",
+        "invoice_date": "2023-09-04T15:49:05.195Z",
+        "due_date": "2023-09-04T23:51:51.246Z",
+        "created_at": "2023-09-05T05:37:44.687Z",
+        "updated_at": "2023-09-04T18:38:51.450Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8a97a70c-d4a3-4c5b-aa01-832c3487d7cf",
+        "amount": 55342,
+        "status": "Overdue",
+        "vendor": "123 Supplier",
+        "invoice_date": "2023-09-04T15:40:30.740Z",
+        "due_date": "2023-09-04T18:05:38.086Z",
+        "created_at": "2023-09-04T09:14:33.113Z",
+        "updated_at": "2023-09-05T03:02:57.486Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3093e8b1-582a-4cc8-bdc1-e35201cf2f45",
+        "amount": 84249,
+        "status": "Cancelled",
+        "vendor": "Acme Vendor",
+        "invoice_date": "2023-09-04T13:48:45.228Z",
+        "due_date": "2023-09-04T18:14:31.713Z",
+        "created_at": "2023-09-05T05:55:22.018Z",
+        "updated_at": "2023-09-04T08:48:27.542Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9dbc39c0-09f2-4c39-88c0-89feaae6806e",
+        "amount": 8351,
+        "status": "Draft",
+        "vendor": "Global Supplier",
+        "invoice_date": "2023-09-04T09:43:55.267Z",
+        "due_date": "2023-09-04T21:24:08.032Z",
+        "created_at": "2023-09-04T12:48:37.945Z",
+        "updated_at": "2023-09-04T21:14:37.816Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "a563dec6-bda1-4a58-8cc5-ba20b1add254",
+        "debit": 20194,
+        "credit": 57157,
+        "transaction_date": "2023-09-04T13:30:15.747Z",
+        "description": "Monthly financial report",
+        "created_at": "2023-09-04T09:39:58.298Z",
+        "updated_at": "2023-09-04T21:06:14.770Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "73c1547f-07cd-4975-bb7f-114aab4eed9b",
+        "debit": 99380,
+        "credit": 50435,
+        "transaction_date": "2023-09-04T09:15:53.771Z",
+        "description": "Budget analysis",
+        "created_at": "2023-09-05T00:07:54.082Z",
+        "updated_at": "2023-09-04T14:43:22.991Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "438b11ff-92a6-48e1-8a1c-fe45e5ad44d8",
+        "debit": 2217,
+        "credit": 53448,
+        "transaction_date": "2023-09-04T16:56:20.385Z",
+        "description": "Expense tracking",
+        "created_at": "2023-09-05T02:43:33.310Z",
+        "updated_at": "2023-09-04T12:19:00.923Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f628febe-dcd2-4cdf-a6c6-2de4aa7afae0",
+        "debit": 26248,
+        "credit": 51604,
+        "transaction_date": "2023-09-05T01:08:59.889Z",
+        "description": "Tax preparation",
+        "created_at": "2023-09-04T10:14:45.219Z",
+        "updated_at": "2023-09-05T04:15:53.630Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "26ea88f0-c140-47f7-9a51-d2f0fa182dd1",
+        "debit": 38521,
+        "credit": 76664,
+        "transaction_date": "2023-09-04T12:29:32.673Z",
+        "description": "Auditing",
+        "created_at": "2023-09-04T16:06:04.122Z",
+        "updated_at": "2023-09-04T09:37:45.451Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "5f15c8a1-de31-479a-9caa-2eddcfe3b59c",
+        "email": "Orion_Mayer74@yahoo.com",
+        "firstName": "Ebba",
+        "lastName": "Hackett-Schulist",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1061.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "18cff27e-636b-447f-b2a1-fa44da2d3b6f",
+        "email": "Devyn2@yahoo.com",
+        "firstName": "Jada",
+        "lastName": "Williamson",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/13990708",
+        "tenantId": null
+      },
+      {
+        "reference": "5720ae64-52d2-41db-8eef-50766147a8fe",
+        "email": "Gabriella_Larkin@gmail.com",
+        "firstName": "Destiney",
+        "lastName": "Auer",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/956.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "796ca865-bd47-4db6-9c49-e50903157043",
+        "email": "Desmond_DuBuque36@yahoo.com",
+        "firstName": "Cruz",
+        "lastName": "Carter",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1193.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1e813f29-883a-43fa-b936-72fbd61006a3",
+        "email": "Stanton.Boehm83@gmail.com",
+        "firstName": "Porter",
+        "lastName": "Sanford",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/83789333",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "062a5f89-157b-46f1-93f7-3b49ea9b0800",
+        "role_name": "Admin",
+        "created_at": "2023-09-04T14:53:00.381Z",
+        "updated_at": "2023-09-04T14:58:27.626Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e4a75974-4c63-4795-9766-4f22ff66be3c",
+        "role_name": "Manager",
+        "created_at": "2023-09-05T05:01:00.948Z",
+        "updated_at": "2023-09-04T22:57:53.616Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "63a8e734-44d5-449b-a227-fd3ce8ad8bc0",
+        "role_name": "Employee",
+        "created_at": "2023-09-05T03:47:42.360Z",
+        "updated_at": "2023-09-04T08:57:38.437Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "be9318e6-a659-4dfa-ae07-833a6719da96",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-05T04:00:41.183Z",
+        "updated_at": "2023-09-05T05:00:30.652Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9032812a-f463-4dac-b1b5-ca94fb0236ff",
+        "role_name": "Team Lead",
+        "created_at": "2023-09-04T19:07:50.131Z",
+        "updated_at": "2023-09-05T02:53:23.422Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "ad4e8fde-4053-4721-928c-b185ece415f3",
+        "permission_name": "Read",
+        "created_at": "2023-09-04T13:48:43.815Z",
+        "updated_at": "2023-09-04T20:11:30.537Z",
+        "role_id": "062a5f89-157b-46f1-93f7-3b49ea9b0800"
+      },
+      {
+        "id": "2e80b157-80d0-44cc-abf3-a70a7f4f99c0",
+        "permission_name": "Write",
+        "created_at": "2023-09-05T04:02:39.699Z",
+        "updated_at": "2023-09-04T15:30:51.360Z",
+        "role_id": "9032812a-f463-4dac-b1b5-ca94fb0236ff"
+      },
+      {
+        "id": "313b7bc1-0709-4c74-93d0-ee15b42bd151",
+        "permission_name": "Delete",
+        "created_at": "2023-09-05T05:09:38.591Z",
+        "updated_at": "2023-09-05T06:01:16.213Z",
+        "role_id": "062a5f89-157b-46f1-93f7-3b49ea9b0800"
+      },
+      {
+        "id": "19a365f1-924d-4738-b89e-00b12d178921",
+        "permission_name": "Execute",
+        "created_at": "2023-09-05T06:11:53.521Z",
+        "updated_at": "2023-09-04T21:24:35.222Z",
+        "role_id": "63a8e734-44d5-449b-a227-fd3ce8ad8bc0"
+      },
+      {
+        "id": "cb22ec0c-f836-4b20-9f61-c667ac1e28dc",
+        "permission_name": "Manage",
+        "created_at": "2023-09-04T11:06:47.727Z",
+        "updated_at": "2023-09-04T21:13:12.429Z",
+        "role_id": "e4a75974-4c63-4795-9766-4f22ff66be3c"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "ad566f24-a3ce-4adf-b081-d060fb3fa5fb",
+        "amount": 32574,
+        "status": "Paid",
+        "vendor": "ABC Supplier",
+        "invoice_date": "2023-09-04T18:40:29.073Z",
+        "due_date": "2023-09-05T07:46:03.312Z",
+        "created_at": "2023-09-05T04:40:52.583Z",
+        "updated_at": "2023-09-04T13:11:03.349Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5a5883a3-cc8f-4d47-9c7e-5fee534a12aa",
+        "amount": 32406,
+        "status": "Pending",
+        "vendor": "XYZ Vendor",
+        "invoice_date": "2023-09-04T10:59:17.863Z",
+        "due_date": "2023-09-04T20:37:59.217Z",
+        "created_at": "2023-09-04T09:26:52.312Z",
+        "updated_at": "2023-09-04T14:21:20.100Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0ad8dc4e-629f-458c-9989-f25d3a97b3be",
+        "amount": 45642,
+        "status": "Overdue",
+        "vendor": "123 Distributors",
+        "invoice_date": "2023-09-05T04:37:18.646Z",
+        "due_date": "2023-09-04T18:21:23.769Z",
+        "created_at": "2023-09-05T04:16:37.983Z",
+        "updated_at": "2023-09-05T08:11:52.267Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "96b71e86-6495-4c68-aeb8-00ccab260235",
+        "amount": 88073,
+        "status": "Cancelled",
+        "vendor": "Acme Wholesale",
+        "invoice_date": "2023-09-04T10:29:15.342Z",
+        "due_date": "2023-09-04T09:19:04.809Z",
+        "created_at": "2023-09-04T20:11:05.522Z",
+        "updated_at": "2023-09-04T08:59:34.890Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0a808406-a789-4554-8837-9e429ad2f93b",
+        "amount": 28771,
+        "status": "Draft",
+        "vendor": "Global Retail",
+        "invoice_date": "2023-09-04T19:45:35.406Z",
+        "due_date": "2023-09-04T09:38:31.693Z",
+        "created_at": "2023-09-05T01:41:15.975Z",
+        "updated_at": "2023-09-04T14:13:24.212Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "91c72c3c-2241-4485-8f04-d7a2c9144b87",
+        "debit": 63892,
+        "credit": 95118,
+        "transaction_date": "2023-09-05T05:22:06.871Z",
+        "description": "Financial Analysis",
+        "created_at": "2023-09-05T07:51:08.136Z",
+        "updated_at": "2023-09-04T11:47:47.653Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a91af7cc-9393-4353-b756-5bd9acc9e6db",
+        "debit": 57849,
+        "credit": 25172,
+        "transaction_date": "2023-09-04T19:23:51.720Z",
+        "description": "Budgeting and Forecasting",
+        "created_at": "2023-09-05T00:28:01.877Z",
+        "updated_at": "2023-09-04T16:32:54.520Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e7b9b585-23cd-4351-88fe-604f583195df",
+        "debit": 55223,
+        "credit": 58871,
+        "transaction_date": "2023-09-05T00:13:47.225Z",
+        "description": "Tax Planning",
+        "created_at": "2023-09-04T15:00:43.121Z",
+        "updated_at": "2023-09-04T14:49:00.656Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b08a586c-a6ff-42fa-b8ba-0368f012783a",
+        "debit": 81403,
+        "credit": 51572,
+        "transaction_date": "2023-09-04T12:45:03.351Z",
+        "description": "Risk Management",
+        "created_at": "2023-09-04T12:30:43.248Z",
+        "updated_at": "2023-09-05T04:41:29.313Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6845f280-1ed4-4029-abe8-67738d655791",
+        "debit": 68205,
+        "credit": 96305,
+        "transaction_date": "2023-09-04T19:09:48.785Z",
+        "description": "Audit and Assurance",
+        "created_at": "2023-09-05T01:41:49.521Z",
+        "updated_at": "2023-09-04T08:36:55.441Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "d4bbb5c7-28be-410a-bbb8-de8a3f5ca9a2",
+        "email": "Turner_Hoppe45@yahoo.com",
+        "firstName": "Chaim",
+        "lastName": "Hills",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30825632",
+        "tenantId": null
+      },
+      {
+        "reference": "949bf98a-b00e-4d8d-9dcc-afc9c13b81be",
+        "email": "Milton_Senger@gmail.com",
+        "firstName": "Rickey",
+        "lastName": "Mosciski",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1108.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a82f256a-8416-4cf3-a453-54fb70769aa2",
+        "email": "Francisca_Pfeffer0@hotmail.com",
+        "firstName": "Wyatt",
+        "lastName": "Thompson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/229.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9e1f4234-1630-4898-802a-47960d1f5ae5",
+        "email": "Elvera_Fadel2@yahoo.com",
+        "firstName": "Deanna",
+        "lastName": "Jast",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/57166718",
+        "tenantId": null
+      },
+      {
+        "reference": "260f6da7-39f7-4039-8280-5f6f2a49753d",
+        "email": "Kendall_Weissnat@gmail.com",
+        "firstName": "Coralie",
+        "lastName": "Lubowitz-Gutkowski",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/11391209",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "ecbcbd48-cd97-4f94-8ae1-902147ab903b",
+        "role_name": "Admin",
+        "created_at": "2023-09-04T19:39:57.951Z",
+        "updated_at": "2023-09-04T11:27:07.623Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b897098f-18fe-41a7-ad08-e58951bc7b61",
+        "role_name": "Manager",
+        "created_at": "2023-09-04T16:47:51.224Z",
+        "updated_at": "2023-09-05T06:45:13.034Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "32097816-09d2-4ffa-a30a-13fc14be0cf7",
+        "role_name": "Employee",
+        "created_at": "2023-09-05T07:44:07.988Z",
+        "updated_at": "2023-09-05T04:36:31.111Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d7503be4-7441-4980-943e-a8f2e2292c15",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-05T06:38:11.215Z",
+        "updated_at": "2023-09-04T09:11:00.183Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e6ba4564-5689-4042-a2df-7af0420b1f15",
+        "role_name": "Analyst",
+        "created_at": "2023-09-04T19:47:05.286Z",
+        "updated_at": "2023-09-05T08:08:20.774Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "0754d4db-7fd3-41b2-847a-cee100ad8dca",
+        "permission_name": "Read",
+        "created_at": "2023-09-04T13:29:05.243Z",
+        "updated_at": "2023-09-04T11:14:58.627Z",
+        "role_id": "ecbcbd48-cd97-4f94-8ae1-902147ab903b"
+      },
+      {
+        "id": "c9d19359-e318-4728-a421-0042663d96d9",
+        "permission_name": "Write",
+        "created_at": "2023-09-05T02:29:34.578Z",
+        "updated_at": "2023-09-04T20:24:25.616Z",
+        "role_id": "ecbcbd48-cd97-4f94-8ae1-902147ab903b"
+      },
+      {
+        "id": "b7fc26ef-2f29-4742-8827-59fbbe1484d9",
+        "permission_name": "Delete",
+        "created_at": "2023-09-04T22:11:09.698Z",
+        "updated_at": "2023-09-04T22:06:30.671Z",
+        "role_id": "d7503be4-7441-4980-943e-a8f2e2292c15"
+      },
+      {
+        "id": "356e0651-e2ba-410b-8e71-4e203bfabb81",
+        "permission_name": "Execute",
+        "created_at": "2023-09-04T23:18:25.534Z",
+        "updated_at": "2023-09-04T09:23:45.922Z",
+        "role_id": "32097816-09d2-4ffa-a30a-13fc14be0cf7"
+      },
+      {
+        "id": "11e5662b-40af-4a09-b3e8-5c985ccb7e32",
+        "permission_name": "Admin",
+        "created_at": "2023-09-04T17:21:55.990Z",
+        "updated_at": "2023-09-04T17:27:54.455Z",
+        "role_id": "ecbcbd48-cd97-4f94-8ae1-902147ab903b"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "735dceb5-7116-4c2a-b7d3-a770eae77424",
+        "amount": 33522,
+        "status": "Paid",
+        "vendor": "ABC Supplier",
+        "invoice_date": "2023-09-05T04:19:07.927Z",
+        "due_date": "2023-09-04T13:58:41.160Z",
+        "created_at": "2023-09-04T20:40:44.101Z",
+        "updated_at": "2023-09-05T03:58:34.909Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "003c1519-f374-4c9e-9901-658d74cf8b6d",
+        "amount": 70329,
+        "status": "Pending",
+        "vendor": "XYZ Vendor",
+        "invoice_date": "2023-09-04T20:19:19.647Z",
+        "due_date": "2023-09-05T03:43:55.061Z",
+        "created_at": "2023-09-04T18:00:22.301Z",
+        "updated_at": "2023-09-04T22:08:24.561Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "150d1e2e-7ad2-435b-af4a-a4769a90ac3c",
+        "amount": 67278,
+        "status": "Overdue",
+        "vendor": "123 Distributor",
+        "invoice_date": "2023-09-04T12:41:18.282Z",
+        "due_date": "2023-09-04T14:32:16.191Z",
+        "created_at": "2023-09-04T12:43:20.799Z",
+        "updated_at": "2023-09-04T23:08:48.335Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c32769e7-5cde-44e1-bab0-e35436bbc597",
+        "amount": 7459,
+        "status": "Cancelled",
+        "vendor": "Acme Manufacturer",
+        "invoice_date": "2023-09-05T04:58:19.589Z",
+        "due_date": "2023-09-05T02:31:24.825Z",
+        "created_at": "2023-09-04T21:34:21.200Z",
+        "updated_at": "2023-09-04T19:39:00.352Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1653d86f-3da4-4818-a61f-d0bcf894554c",
+        "amount": 77552,
+        "status": "Draft",
+        "vendor": "Global Supplier",
+        "invoice_date": "2023-09-04T15:35:34.518Z",
+        "due_date": "2023-09-04T09:52:03.582Z",
+        "created_at": "2023-09-05T02:09:40.149Z",
+        "updated_at": "2023-09-04T13:32:32.793Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "b5712165-7098-4e51-81b9-ff7f2fd883ba",
+        "debit": 84846,
+        "credit": 25672,
+        "transaction_date": "2023-09-04T22:18:34.521Z",
+        "description": "Budget planning",
+        "created_at": "2023-09-05T03:27:10.380Z",
+        "updated_at": "2023-09-04T12:05:51.083Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f9eb872e-0342-4068-ab99-4ab70ecb76e7",
+        "debit": 36348,
+        "credit": 53454,
+        "transaction_date": "2023-09-04T09:37:54.474Z",
+        "description": "Financial analysis",
+        "created_at": "2023-09-04T12:56:45.879Z",
+        "updated_at": "2023-09-04T21:25:18.249Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "68f6d24c-3314-46a7-90e8-6239f5a54a47",
+        "debit": 14967,
+        "credit": 38582,
+        "transaction_date": "2023-09-05T07:00:25.467Z",
+        "description": "Tax preparation",
+        "created_at": "2023-09-05T07:15:11.706Z",
+        "updated_at": "2023-09-04T13:20:53.835Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "192e8ea7-fa95-4381-a443-bfb48e8fa015",
+        "debit": 16669,
+        "credit": 93789,
+        "transaction_date": "2023-09-04T21:59:08.376Z",
+        "description": "Auditing services",
+        "created_at": "2023-09-04T16:01:18.225Z",
+        "updated_at": "2023-09-04T13:22:04.736Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8e31fed9-d294-4929-872f-ac9d2eaa4e5f",
+        "debit": 1684,
+        "credit": 58300,
+        "transaction_date": "2023-09-05T02:18:05.786Z",
+        "description": "Payroll management",
+        "created_at": "2023-09-04T19:45:58.719Z",
+        "updated_at": "2023-09-04T22:08:36.718Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "0c57d3be-691a-4211-845c-5387feac8451",
+        "email": "Cedrick.Trantow@hotmail.com",
+        "firstName": "Sandrine",
+        "lastName": "Daniel",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/85.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "fc15cdc6-891f-4b79-afc4-15b861629431",
+        "email": "Jarod37@gmail.com",
+        "firstName": "Lois",
+        "lastName": "Lowe",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/32606909",
+        "tenantId": null
+      },
+      {
+        "reference": "91fb6eb6-12e2-430e-94ca-38191ab40604",
+        "email": "Gage1@gmail.com",
+        "firstName": "Pasquale",
+        "lastName": "Nienow",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/689.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "29267f8c-fd1d-458e-a322-b87288d6e776",
+        "email": "Christopher92@yahoo.com",
+        "firstName": "Jarrett",
+        "lastName": "Murphy",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/27904750",
+        "tenantId": null
+      },
+      {
+        "reference": "d602a914-6f9b-4271-a81e-9ea53d3e72af",
+        "email": "Wilburn.Dickinson-Will@hotmail.com",
+        "firstName": "Dante",
+        "lastName": "Douglas",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/420.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "fbc4afb9-3b58-449b-84ae-bcdd8fd338fe",
+        "role_name": "Admin",
+        "created_at": "2023-09-04T19:03:42.384Z",
+        "updated_at": "2023-09-04T22:21:09.412Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b78e9965-ecb1-42a4-8c70-aa8747a8bf04",
+        "role_name": "Manager",
+        "created_at": "2023-09-04T19:05:00.967Z",
+        "updated_at": "2023-09-05T07:36:52.966Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6bdeddc0-b3b0-4526-805c-79b81fe564e6",
+        "role_name": "Employee",
+        "created_at": "2023-09-05T08:18:50.624Z",
+        "updated_at": "2023-09-04T10:24:54.870Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "33db8373-f3db-4094-9c5b-c48cf7274506",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-05T00:27:36.603Z",
+        "updated_at": "2023-09-04T20:44:12.208Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4a6a3652-438a-47f3-8c6b-998c16925449",
+        "role_name": "Analyst",
+        "created_at": "2023-09-04T13:50:03.243Z",
+        "updated_at": "2023-09-04T10:30:06.945Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "ed453a3d-bf18-4a68-8d54-335f2260bd4f",
+        "permission_name": "Create",
+        "created_at": "2023-09-04T18:04:07.211Z",
+        "updated_at": "2023-09-05T05:49:12.659Z",
+        "role_id": "4a6a3652-438a-47f3-8c6b-998c16925449"
+      },
+      {
+        "id": "e53474ca-3fd1-42f1-bc19-cc99c9a4b2c0",
+        "permission_name": "Read",
+        "created_at": "2023-09-04T18:03:57.917Z",
+        "updated_at": "2023-09-04T23:36:31.316Z",
+        "role_id": "b78e9965-ecb1-42a4-8c70-aa8747a8bf04"
+      },
+      {
+        "id": "7c914bd2-391c-4a13-84eb-5ec47aab6495",
+        "permission_name": "Update",
+        "created_at": "2023-09-04T13:27:18.780Z",
+        "updated_at": "2023-09-05T00:35:37.499Z",
+        "role_id": "b78e9965-ecb1-42a4-8c70-aa8747a8bf04"
+      },
+      {
+        "id": "8b39fbc1-125c-4264-836a-5d3287ce2f9a",
+        "permission_name": "Delete",
+        "created_at": "2023-09-04T23:05:00.041Z",
+        "updated_at": "2023-09-04T22:06:08.888Z",
+        "role_id": "b78e9965-ecb1-42a4-8c70-aa8747a8bf04"
+      },
+      {
+        "id": "ce773bea-5f42-46ac-be11-673edc320233",
+        "permission_name": "Approve",
+        "created_at": "2023-09-04T14:34:36.349Z",
+        "updated_at": "2023-09-05T02:50:49.955Z",
+        "role_id": "6bdeddc0-b3b0-4526-805c-79b81fe564e6"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "bec7884f-6449-4786-a646-7db6da161c3f",
+        "amount": 41155,
+        "status": "Paid",
+        "vendor": "ABC Suppliers",
+        "invoice_date": "2023-09-05T06:16:35.931Z",
+        "due_date": "2023-09-04T13:17:56.508Z",
+        "created_at": "2023-09-04T14:34:01.957Z",
+        "updated_at": "2023-09-04T18:12:58.285Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "ecdf3d91-2c64-4f4c-8d4a-b57e140ebfcc",
+        "amount": 92709,
+        "status": "Pending",
+        "vendor": "XYZ Distributors",
+        "invoice_date": "2023-09-04T08:55:28.347Z",
+        "due_date": "2023-09-04T12:13:47.653Z",
+        "created_at": "2023-09-05T01:19:41.634Z",
+        "updated_at": "2023-09-04T21:27:05.571Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "70ba6d0e-8d39-4808-8bd6-a7b81aaa5327",
+        "amount": 14854,
+        "status": "Overdue",
+        "vendor": "123 Retailers",
+        "invoice_date": "2023-09-04T17:47:59.217Z",
+        "due_date": "2023-09-05T01:11:29.172Z",
+        "created_at": "2023-09-04T18:08:44.994Z",
+        "updated_at": "2023-09-04T17:25:53.924Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c34caaca-3fd4-42e7-8351-aab5ab26838f",
+        "amount": 61792,
+        "status": "Cancelled",
+        "vendor": "Acme Wholesalers",
+        "invoice_date": "2023-09-04T20:33:44.253Z",
+        "due_date": "2023-09-04T15:26:06.488Z",
+        "created_at": "2023-09-04T13:41:32.835Z",
+        "updated_at": "2023-09-05T05:01:10.901Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "782ca6f4-1218-4f33-9752-c2db9f1d3c95",
+        "amount": 37658,
+        "status": "Draft",
+        "vendor": "Bright Manufacturers",
+        "invoice_date": "2023-09-04T17:58:12.057Z",
+        "due_date": "2023-09-04T21:09:09.994Z",
+        "created_at": "2023-09-04T11:29:37.688Z",
+        "updated_at": "2023-09-05T08:29:12.011Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "54cc4958-2516-4347-b421-afb3c00f81ad",
+        "debit": 13339,
+        "credit": 72529,
+        "transaction_date": "2023-09-04T22:11:06.335Z",
+        "description": "Financial reporting and analysis",
+        "created_at": "2023-09-05T08:16:58.140Z",
+        "updated_at": "2023-09-04T23:48:07.971Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b34c78e8-8cf2-48dd-86f8-ceb8e2b39e21",
+        "debit": 37960,
+        "credit": 26159,
+        "transaction_date": "2023-09-04T19:37:10.407Z",
+        "description": "Budgeting and forecasting",
+        "created_at": "2023-09-04T15:31:18.003Z",
+        "updated_at": "2023-09-05T03:19:34.905Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "2be389e8-414d-45c4-bdee-9ada82823c69",
+        "debit": 93095,
+        "credit": 13545,
+        "transaction_date": "2023-09-04T19:47:40.623Z",
+        "description": "Tax planning and compliance",
+        "created_at": "2023-09-04T10:32:34.329Z",
+        "updated_at": "2023-09-05T05:49:43.829Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "09f4d292-f660-4057-86de-414e85fc5ac1",
+        "debit": 3319,
+        "credit": 76990,
+        "transaction_date": "2023-09-04T10:18:45.555Z",
+        "description": "Payroll processing",
+        "created_at": "2023-09-05T01:14:24.103Z",
+        "updated_at": "2023-09-04T14:59:59.659Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f16c61bd-1583-4d66-a187-422ab290c6ab",
+        "debit": 27991,
+        "credit": 69319,
+        "transaction_date": "2023-09-04T09:33:41.210Z",
+        "description": "Auditing and assurance",
+        "created_at": "2023-09-04T17:34:19.858Z",
+        "updated_at": "2023-09-04T08:54:59.774Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "b39d64ae-a090-4a8a-ad77-225970302af6",
+        "email": "Carey78@gmail.com",
+        "firstName": "Hilbert",
+        "lastName": "Becker",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/3.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "169ef805-455c-4ea7-81de-c4e01ca56c05",
+        "email": "Yolanda58@hotmail.com",
+        "firstName": "Jace",
+        "lastName": "Ortiz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73076507",
+        "tenantId": null
+      },
+      {
+        "reference": "99a87f8d-532e-48d4-b53d-7cc480a8aa37",
+        "email": "Golda_Frami@gmail.com",
+        "firstName": "Maxine",
+        "lastName": "Ward",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/75469372",
+        "tenantId": null
+      },
+      {
+        "reference": "a48a2971-9999-4d6b-9cb7-912456328802",
+        "email": "Garland.Hammes@hotmail.com",
+        "firstName": "Rudolph",
+        "lastName": "Wilkinson",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/178.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "94a8b1ef-b565-4fe2-9d43-88a5879e371c",
+        "email": "Xzavier56@yahoo.com",
+        "firstName": "Zena",
+        "lastName": "McCullough",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/873.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "9f67e230-fab0-4181-add0-e5c1b12741a3",
+        "role_name": "Admin",
+        "created_at": "2023-09-05T00:10:35.713Z",
+        "updated_at": "2023-09-05T04:25:14.007Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8c4e922b-9de9-49ce-91be-cc162bfcf0fe",
+        "role_name": "Manager",
+        "created_at": "2023-09-04T17:43:23.099Z",
+        "updated_at": "2023-09-04T16:44:30.889Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d3d64bb2-d332-4b09-8914-b2ed2b6293ab",
+        "role_name": "Employee",
+        "created_at": "2023-09-04T14:16:53.408Z",
+        "updated_at": "2023-09-05T07:00:04.263Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f676c69d-b52c-49fc-9374-c2eb6dc07ce5",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-04T15:56:07.922Z",
+        "updated_at": "2023-09-05T04:03:22.591Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "2006b403-f4f2-4321-bf73-eb5c3c7c1d7b",
+        "role_name": "Assistant",
+        "created_at": "2023-09-05T06:49:33.506Z",
+        "updated_at": "2023-09-04T13:17:52.190Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "22d8cd87-44ec-4a27-9bcc-b5081952e662",
+        "permission_name": "Read",
+        "created_at": "2023-09-04T18:35:26.111Z",
+        "updated_at": "2023-09-04T18:22:32.077Z",
+        "role_id": "f676c69d-b52c-49fc-9374-c2eb6dc07ce5"
+      },
+      {
+        "id": "c228aa4c-0963-4b4f-8d51-6d3d1d022c93",
+        "permission_name": "Write",
+        "created_at": "2023-09-05T01:42:07.073Z",
+        "updated_at": "2023-09-05T02:58:07.719Z",
+        "role_id": "2006b403-f4f2-4321-bf73-eb5c3c7c1d7b"
+      },
+      {
+        "id": "06026ad8-5623-4e32-90f9-0078a98cfa1d",
+        "permission_name": "Delete",
+        "created_at": "2023-09-04T22:41:47.383Z",
+        "updated_at": "2023-09-04T08:30:27.477Z",
+        "role_id": "9f67e230-fab0-4181-add0-e5c1b12741a3"
+      },
+      {
+        "id": "518d0a44-6ed3-4167-8bcd-77489d0b32ff",
+        "permission_name": "Update",
+        "created_at": "2023-09-04T13:57:39.590Z",
+        "updated_at": "2023-09-05T04:05:38.150Z",
+        "role_id": "f676c69d-b52c-49fc-9374-c2eb6dc07ce5"
+      },
+      {
+        "id": "419c7039-a9ad-46de-8d3f-4300de71b22c",
+        "permission_name": "Execute",
+        "created_at": "2023-09-04T21:42:00.085Z",
+        "updated_at": "2023-09-05T04:17:12.009Z",
+        "role_id": "8c4e922b-9de9-49ce-91be-cc162bfcf0fe"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "1812e6b5-5788-4038-aa7b-1baab07114c5",
+        "amount": 986,
+        "status": "Paid",
+        "vendor": "ABC Supplier",
+        "invoice_date": "2023-09-04T16:31:20.137Z",
+        "due_date": "2023-09-05T00:23:07.731Z",
+        "created_at": "2023-09-05T02:26:12.820Z",
+        "updated_at": "2023-09-04T22:21:15.301Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5cfe2ab8-4b99-4552-ace2-90434f4665c3",
+        "amount": 88448,
+        "status": "Pending",
+        "vendor": "XYZ Distributor",
+        "invoice_date": "2023-09-04T15:59:25.214Z",
+        "due_date": "2023-09-04T17:58:07.736Z",
+        "created_at": "2023-09-04T21:57:19.017Z",
+        "updated_at": "2023-09-04T22:11:27.517Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7435e16b-1202-4977-89f6-6b91e4c5df6a",
+        "amount": 95611,
+        "status": "Overdue",
+        "vendor": "123 Retailer",
+        "invoice_date": "2023-09-04T09:50:00.268Z",
+        "due_date": "2023-09-04T22:21:51.199Z",
+        "created_at": "2023-09-04T20:33:00.592Z",
+        "updated_at": "2023-09-04T17:34:21.792Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "78cf00c2-9c27-48f9-ab38-172698951f58",
+        "amount": 29882,
+        "status": "Cancelled",
+        "vendor": "Acme Wholesaler",
+        "invoice_date": "2023-09-05T02:06:43.493Z",
+        "due_date": "2023-09-04T15:29:32.802Z",
+        "created_at": "2023-09-04T16:10:18.473Z",
+        "updated_at": "2023-09-04T13:31:22.502Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1cb966b6-762b-475c-b3da-650700488b63",
+        "amount": 49977,
+        "status": "Draft",
+        "vendor": "Global Manufacturer",
+        "invoice_date": "2023-09-04T14:17:37.287Z",
+        "due_date": "2023-09-05T05:12:56.065Z",
+        "created_at": "2023-09-04T14:12:02.158Z",
+        "updated_at": "2023-09-05T07:34:18.211Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "67f8def2-7767-44c7-8b33-7b7cb05d0663",
+        "debit": 87513,
+        "credit": 60120,
+        "transaction_date": "2023-09-04T20:11:15.647Z",
+        "description": "Financial analysis",
+        "created_at": "2023-09-04T19:04:07.141Z",
+        "updated_at": "2023-09-04T14:10:50.773Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1a7b05e9-a677-466c-ba7d-c80d417df798",
+        "debit": 30654,
+        "credit": 33945,
+        "transaction_date": "2023-09-04T22:39:05.480Z",
+        "description": "Budget planning",
+        "created_at": "2023-09-04T20:02:23.131Z",
+        "updated_at": "2023-09-04T18:03:42.585Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f260fc6e-009b-4c8a-a5f7-fc008fda8b9e",
+        "debit": 83742,
+        "credit": 90672,
+        "transaction_date": "2023-09-04T18:54:42.446Z",
+        "description": "Tax preparation",
+        "created_at": "2023-09-05T05:24:00.910Z",
+        "updated_at": "2023-09-04T15:49:16.066Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "691833b9-64d9-40e6-8815-386565f864ad",
+        "debit": 61695,
+        "credit": 55077,
+        "transaction_date": "2023-09-04T13:27:41.366Z",
+        "description": "Auditing services",
+        "created_at": "2023-09-04T17:25:36.366Z",
+        "updated_at": "2023-09-04T16:09:48.352Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4bf519e6-7ae0-4cce-868e-087c1151df8a",
+        "debit": 54980,
+        "credit": 76960,
+        "transaction_date": "2023-09-04T17:30:51.730Z",
+        "description": "Bookkeeping",
+        "created_at": "2023-09-05T06:45:54.557Z",
+        "updated_at": "2023-09-04T11:28:05.574Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "24202801-fe0e-44ac-9266-26b150255eec",
+        "email": "Savion.Gleason@hotmail.com",
+        "firstName": "Milford",
+        "lastName": "Windler",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/443.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8f0b5b35-792c-4fa4-a4ab-a4b1726b24a8",
+        "email": "Chaz_Tillman@yahoo.com",
+        "firstName": "Marjorie",
+        "lastName": "Lang",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/450.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1dd239e9-a60a-4e34-8879-89225b01cb42",
+        "email": "Dortha49@gmail.com",
+        "firstName": "Helga",
+        "lastName": "Nader",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6236345",
+        "tenantId": null
+      },
+      {
+        "reference": "59f25bcd-437b-44df-8672-2291c7efd483",
+        "email": "Brandon.Wunsch@yahoo.com",
+        "firstName": "Tobin",
+        "lastName": "Quitzon",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67736407",
+        "tenantId": null
+      },
+      {
+        "reference": "aef231bd-cffa-4c49-a82f-105501b192c6",
+        "email": "Gunner_Jacobs@hotmail.com",
+        "firstName": "Alvena",
+        "lastName": "Strosin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/603.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "0b34470c-9d05-4449-b08c-28f7d103e99a",
+        "role_name": "Admin",
+        "created_at": "2023-09-05T02:43:59.341Z",
+        "updated_at": "2023-09-05T03:33:11.596Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "243f24c6-5ae1-49fd-8e60-1739fa76dec4",
+        "role_name": "Manager",
+        "created_at": "2023-09-04T10:33:59.193Z",
+        "updated_at": "2023-09-05T01:42:30.947Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d7ee4cfc-4d91-447f-83e1-53e8efbb5d56",
+        "role_name": "Employee",
+        "created_at": "2023-09-04T19:10:53.207Z",
+        "updated_at": "2023-09-04T17:31:30.611Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "88698e76-a728-4131-bce9-a4d89cc71698",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-04T11:59:41.694Z",
+        "updated_at": "2023-09-04T14:13:29.207Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d515e8e0-7823-4e86-bb23-b442fb2cdd10",
+        "role_name": "Assistant",
+        "created_at": "2023-09-04T17:59:18.218Z",
+        "updated_at": "2023-09-05T06:24:05.788Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "e6f3e586-a0ea-43cb-9b12-5532f82e847d",
+        "permission_name": "Read",
+        "created_at": "2023-09-05T06:44:46.844Z",
+        "updated_at": "2023-09-04T09:38:02.310Z",
+        "role_id": "d7ee4cfc-4d91-447f-83e1-53e8efbb5d56"
+      },
+      {
+        "id": "8d42568e-69da-477f-94db-267424eccc8d",
+        "permission_name": "Write",
+        "created_at": "2023-09-04T18:16:38.258Z",
+        "updated_at": "2023-09-05T02:14:44.327Z",
+        "role_id": "d515e8e0-7823-4e86-bb23-b442fb2cdd10"
+      },
+      {
+        "id": "a76eee15-7665-47bc-a3f0-822c84638697",
+        "permission_name": "Delete",
+        "created_at": "2023-09-05T04:36:53.253Z",
+        "updated_at": "2023-09-05T00:05:38.274Z",
+        "role_id": "d7ee4cfc-4d91-447f-83e1-53e8efbb5d56"
+      },
+      {
+        "id": "00f533e9-d53b-4b93-8160-54a891bc983a",
+        "permission_name": "Execute",
+        "created_at": "2023-09-04T11:07:39.723Z",
+        "updated_at": "2023-09-05T04:59:04.634Z",
+        "role_id": "d7ee4cfc-4d91-447f-83e1-53e8efbb5d56"
+      },
+      {
+        "id": "f93a447c-b2aa-47ed-9c4c-fa16131ffa47",
+        "permission_name": "Update",
+        "created_at": "2023-09-04T19:27:21.585Z",
+        "updated_at": "2023-09-05T02:30:01.486Z",
+        "role_id": "88698e76-a728-4131-bce9-a4d89cc71698"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "94c4b511-14f6-4084-bf27-5180712f33b9",
+        "amount": 74496,
+        "status": "Paid",
+        "vendor": "ABC Supplier",
+        "invoice_date": "2023-09-04T19:25:47.889Z",
+        "due_date": "2023-09-04T17:10:55.378Z",
+        "created_at": "2023-09-04T19:57:37.851Z",
+        "updated_at": "2023-09-04T09:08:51.027Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c60d13b0-5ddd-4b69-a41e-099f82e6e6a0",
+        "amount": 37800,
+        "status": "Pending",
+        "vendor": "XYZ Distributors",
+        "invoice_date": "2023-09-05T06:49:02.140Z",
+        "due_date": "2023-09-04T23:52:41.767Z",
+        "created_at": "2023-09-04T19:04:18.672Z",
+        "updated_at": "2023-09-05T06:18:32.985Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3a9e2e15-9740-4d2f-b23e-ada4bbd12ec0",
+        "amount": 88435,
+        "status": "Overdue",
+        "vendor": "123 Wholesalers",
+        "invoice_date": "2023-09-04T12:12:34.180Z",
+        "due_date": "2023-09-05T05:55:49.645Z",
+        "created_at": "2023-09-04T09:00:44.637Z",
+        "updated_at": "2023-09-04T12:19:54.039Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7c95627f-87de-4c5c-b4b0-742261f913fe",
+        "amount": 62280,
+        "status": "Cancelled",
+        "vendor": "Global Retailers",
+        "invoice_date": "2023-09-04T15:53:13.777Z",
+        "due_date": "2023-09-04T23:06:30.010Z",
+        "created_at": "2023-09-04T16:03:39.778Z",
+        "updated_at": "2023-09-04T21:37:24.861Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c9f41685-2cfd-4f25-9750-ad5e408249e3",
+        "amount": 86587,
+        "status": "Processing",
+        "vendor": "Innovative Manufacturers",
+        "invoice_date": "2023-09-04T13:04:56.699Z",
+        "due_date": "2023-09-04T10:33:02.530Z",
+        "created_at": "2023-09-04T13:40:31.011Z",
+        "updated_at": "2023-09-04T09:06:51.015Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "d83faf4d-5f6c-446d-a598-ce35c48dc17e",
+        "debit": 79287,
+        "credit": 55584,
+        "transaction_date": "2023-09-04T19:58:15.045Z",
+        "description": "Financial analysis",
+        "created_at": "2023-09-05T02:29:24.455Z",
+        "updated_at": "2023-09-05T05:02:56.346Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "57ff912d-bdcf-49ec-9070-74e18efb9718",
+        "debit": 27926,
+        "credit": 67293,
+        "transaction_date": "2023-09-05T02:56:08.474Z",
+        "description": "Budgeting and forecasting",
+        "created_at": "2023-09-04T09:55:12.195Z",
+        "updated_at": "2023-09-04T10:27:30.925Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5199d019-33f8-4c02-999d-78321154bdb2",
+        "debit": 236,
+        "credit": 21263,
+        "transaction_date": "2023-09-04T21:50:34.230Z",
+        "description": "Tax planning",
+        "created_at": "2023-09-04T13:46:01.387Z",
+        "updated_at": "2023-09-04T19:33:42.500Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "59bf94f3-303f-4610-922d-5efaabfdd790",
+        "debit": 62205,
+        "credit": 89072,
+        "transaction_date": "2023-09-04T09:27:52.525Z",
+        "description": "Auditing services",
+        "created_at": "2023-09-05T04:48:43.799Z",
+        "updated_at": "2023-09-05T05:06:59.677Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c9684370-704c-4259-9ced-0e287e5124c5",
+        "debit": 35290,
+        "credit": 98767,
+        "transaction_date": "2023-09-05T01:58:30.807Z",
+        "description": "Payroll management",
+        "created_at": "2023-09-04T14:02:45.991Z",
+        "updated_at": "2023-09-05T02:47:15.132Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "4336694c-4fc5-4c55-86c0-7d0ac42fef28",
+        "email": "Bryon.Ondricka0@hotmail.com",
+        "firstName": "Britney",
+        "lastName": "Rutherford",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/79486201",
+        "tenantId": null
+      },
+      {
+        "reference": "152d38da-04c8-41b6-902f-003d37784056",
+        "email": "Amina31@gmail.com",
+        "firstName": "Ashleigh",
+        "lastName": "Kiehn",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/87182909",
+        "tenantId": null
+      },
+      {
+        "reference": "564fcd5d-8ef4-4612-834a-f7d37733450f",
+        "email": "Garry73@gmail.com",
+        "firstName": "Kylie",
+        "lastName": "Bosco",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/574.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "8e8e2047-22d1-4799-adb3-9437dfffd6d2",
+        "email": "Makenzie86@hotmail.com",
+        "firstName": "Arthur",
+        "lastName": "Harris",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/19254130",
+        "tenantId": null
+      },
+      {
+        "reference": "1a8de091-7796-47d2-a95a-412b4945e9fa",
+        "email": "Stewart.Wolff@yahoo.com",
+        "firstName": "Jacynthe",
+        "lastName": "Bins",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/817.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "ce358da6-482e-4188-ae6a-dfd0381fb478",
+        "role_name": "Admin",
+        "created_at": "2023-09-04T16:48:07.183Z",
+        "updated_at": "2023-09-04T13:28:34.742Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f62a47ac-f933-46f9-bcef-1fe976198b59",
+        "role_name": "Manager",
+        "created_at": "2023-09-05T01:08:08.397Z",
+        "updated_at": "2023-09-04T18:21:26.133Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "2c4bdd7b-417c-4dee-ace6-382b2a7f01a3",
+        "role_name": "Supervisor",
+        "created_at": "2023-09-04T12:27:52.858Z",
+        "updated_at": "2023-09-04T22:31:44.531Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f242e655-d9fc-4964-8f00-d125cf4c7167",
+        "role_name": "Employee",
+        "created_at": "2023-09-04T09:36:23.582Z",
+        "updated_at": "2023-09-04T13:53:26.560Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "75b7d84c-da73-4c1b-932f-105f0d7d0612",
+        "role_name": "Guest",
+        "created_at": "2023-09-04T17:14:02.071Z",
+        "updated_at": "2023-09-04T20:21:03.012Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "806c0346-8bf0-4732-9603-58b4ee256d30",
+        "permission_name": "Read",
+        "created_at": "2023-09-05T07:52:01.493Z",
+        "updated_at": "2023-09-05T06:47:37.783Z",
+        "role_id": "2c4bdd7b-417c-4dee-ace6-382b2a7f01a3"
+      },
+      {
+        "id": "b3eb27ac-55d4-45cb-be71-a88f102e2cae",
+        "permission_name": "Write",
+        "created_at": "2023-09-04T21:33:41.986Z",
+        "updated_at": "2023-09-05T01:29:49.526Z",
+        "role_id": "ce358da6-482e-4188-ae6a-dfd0381fb478"
+      },
+      {
+        "id": "696e3fa2-bbd8-413a-aa4c-23afe03471cd",
+        "permission_name": "Delete",
+        "created_at": "2023-09-04T22:39:58.766Z",
+        "updated_at": "2023-09-04T16:00:18.517Z",
+        "role_id": "75b7d84c-da73-4c1b-932f-105f0d7d0612"
+      },
+      {
+        "id": "c2791c06-0244-45af-b714-f8d565074725",
+        "permission_name": "Execute",
+        "created_at": "2023-09-04T14:57:14.166Z",
+        "updated_at": "2023-09-05T03:09:44.720Z",
+        "role_id": "f242e655-d9fc-4964-8f00-d125cf4c7167"
+      },
+      {
+        "id": "e6d1ec69-809b-4c1c-9b64-357ff860ceb5",
+        "permission_name": "Manage",
+        "created_at": "2023-09-05T00:25:03.899Z",
+        "updated_at": "2023-09-05T04:28:27.602Z",
+        "role_id": "2c4bdd7b-417c-4dee-ace6-382b2a7f01a3"
+      }
+    ],
+    "invoice": [
+      {
+        "id": "9647068c-9975-466d-b440-a2af966d36c8",
+        "amount": 47751,
+        "status": "Paid",
+        "vendor": "ABC Supplier",
+        "invoice_date": "2023-09-05T05:23:53.166Z",
+        "due_date": "2023-09-04T21:59:57.070Z",
+        "created_at": "2023-09-05T06:02:04.605Z",
+        "updated_at": "2023-09-05T01:59:53.158Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4a31ad79-676a-47ca-9f5c-d0625d732f8f",
+        "amount": 50787,
+        "status": "Pending",
+        "vendor": "XYZ Vendor",
+        "invoice_date": "2023-09-04T14:25:51.310Z",
+        "due_date": "2023-09-04T17:04:15.391Z",
+        "created_at": "2023-09-04T09:15:51.570Z",
+        "updated_at": "2023-09-04T12:05:33.621Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d84d1499-c9a4-4404-8c89-17031b6a11f4",
+        "amount": 51431,
+        "status": "Overdue",
+        "vendor": "123 Distributor",
+        "invoice_date": "2023-09-04T17:17:44.155Z",
+        "due_date": "2023-09-04T10:33:35.546Z",
+        "created_at": "2023-09-04T17:30:04.541Z",
+        "updated_at": "2023-09-04T17:30:28.244Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5f321995-c6fa-4c1d-9684-5f2d7087f407",
+        "amount": 35807,
+        "status": "Cancelled",
+        "vendor": "Acme Manufacturer",
+        "invoice_date": "2023-09-05T07:56:42.914Z",
+        "due_date": "2023-09-04T16:53:57.086Z",
+        "created_at": "2023-09-04T13:54:08.038Z",
+        "updated_at": "2023-09-04T11:08:07.223Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3af47595-571f-4060-a0de-5cb84bb3ad04",
+        "amount": 48683,
+        "status": "Draft",
+        "vendor": "Global Retailer",
+        "invoice_date": "2023-09-05T08:07:50.602Z",
+        "due_date": "2023-09-04T15:46:01.319Z",
+        "created_at": "2023-09-05T00:27:27.525Z",
+        "updated_at": "2023-09-05T02:58:20.465Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "accounting": [
+      {
+        "id": "f44a69b7-6014-4ff1-8ebe-f7ed484431c3",
+        "debit": 20103,
+        "credit": 14287,
+        "transaction_date": "2023-09-04T17:40:52.397Z",
+        "description": "Financial analysis",
+        "created_at": "2023-09-05T04:49:31.881Z",
+        "updated_at": "2023-09-04T09:23:12.416Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4158268a-b2d1-4bda-8a77-c625ce1a7380",
+        "debit": 92057,
+        "credit": 25021,
+        "transaction_date": "2023-09-04T08:36:10.408Z",
+        "description": "Budgeting and forecasting",
+        "created_at": "2023-09-04T12:40:50.683Z",
+        "updated_at": "2023-09-04T18:19:26.671Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "af3e0988-b2ca-4410-b963-ce2efd2a85b3",
+        "debit": 71328,
+        "credit": 48651,
+        "transaction_date": "2023-09-05T07:58:31.635Z",
+        "description": "Tax planning",
+        "created_at": "2023-09-05T07:48:09.657Z",
+        "updated_at": "2023-09-04T09:31:06.832Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "49f6b8b5-bf4a-4566-98d1-54da3f37dbee",
+        "debit": 94795,
+        "credit": 27950,
+        "transaction_date": "2023-09-04T09:31:47.376Z",
+        "description": "Auditing services",
+        "created_at": "2023-09-04T10:44:35.044Z",
+        "updated_at": "2023-09-04T10:06:49.665Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9cc107b9-977c-4617-bd59-f63531a2eb02",
+        "debit": 54655,
+        "credit": 83341,
+        "transaction_date": "2023-09-05T05:10:55.038Z",
+        "description": "Payroll management",
+        "created_at": "2023-09-04T15:15:24.018Z",
+        "updated_at": "2023-09-05T07:16:13.377Z",
+        "company_id": "main_entity_pk",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "464a1630-3f83-4809-bf96-1616c0551d3c",
+        "email": "Kenton.Denesik89@yahoo.com",
+        "firstName": "Jovani",
+        "lastName": "Jacobson-Hirthe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/317.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "e515fdff-7977-4cd5-bc92-d1311830fccd",
+        "email": "Nolan.Larson@gmail.com",
+        "firstName": "Demond",
+        "lastName": "Emard",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/284.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f02bfc27-a6af-4fc5-834c-d95bd57bd7ae",
+        "email": "Hector_Kovacek70@yahoo.com",
+        "firstName": "Crawford",
+        "lastName": "Bergstrom",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/799.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "707f228f-a5e8-4df1-90d9-a9d9344610ae",
+        "email": "Nash68@hotmail.com",
+        "firstName": "Leatha",
+        "lastName": "Kunze",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/23403508",
+        "tenantId": null
+      },
+      {
+        "reference": "717da85d-e448-4367-a719-1cdef86e8712",
+        "email": "Marilie44@yahoo.com",
+        "firstName": "Sarai",
+        "lastName": "Metz",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/395.jpg",
+        "tenantId": null
+      }
+    ]
+  }
+]
